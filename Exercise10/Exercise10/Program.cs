@@ -28,7 +28,38 @@
 
                     Console.WriteLine("Error: Invalid option entered");
                 }
+
+                Console.WriteLine();
+
+                bool quitting = false;
+
+                switch(option)
+                {
+                    case 1:
+                        Console.WriteLine("Starting a new save file...");
+                        break;
+                    case 2:
+                        Console.WriteLine("Loading the save file...");
+                        break;
+                    case 3:
+                        Console.WriteLine("Opening the options menu...");
+                        break;
+                    case 4:
+                        quitting = true;
+                        break;
+                }
+
+                Console.WriteLine();
+
+                if (quitting)
+                {
+                    Console.WriteLine("Exiting the game...");
+                    Console.WriteLine("Thank you for playing");
+                    break;
+                }
             }
+
+            Console.WriteLine();
         }
     }
 }
